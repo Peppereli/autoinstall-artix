@@ -1,6 +1,6 @@
 set -e
 
-sudo pacman -S sway swaybg swayidle swaylock waybar pipewire pipewire-pulse wireplumber neovim pavucontrol thunar thunar-archive-plugin 7zip unzip zip xarchiver gcc gthumb btop ffmpegthumbnailer tumbler mpv qbittorrent grim slurp xdg-desktop-portal-wlr zathura zathura-cb zathura-pdf-poppler fzf groff mesa bc yt-dlp zsh-autosuggestions acpi wl-clipboard ttf-nerd-fonts-symbols networkmanager network-manager-applet iwd gammastep gvfs gvfs-mtp dunst polkit-gnome yazi zsh-syntax-highlighting zsh nwg-look lf bleachbit telegram-desktop foot unrar steam wireshark-qt steam noto-fonts noto-fonts-emoji noto-fonts-extra noto-fonts-cjk ttf-liberation inter-font
+sudo pacman -S sway swaybg swayidle swaylock waybar pipewire pipewire-pulse wireplumber neovim pavucontrol thunar thunar-archive-plugin 7zip unzip zip xarchiver gcc gthumb btop ffmpegthumbnailer tumbler mpv qbittorrent grim slurp xdg-desktop-portal-wlr zathura zathura-cb zathura-pdf-poppler fzf groff mesa bc yt-dlp zsh-autosuggestions acpi wl-clipboard ttf-nerd-fonts-symbols networkmanager network-manager-applet iwd gammastep gvfs gvfs-mtp dunst polkit-gnome zsh-syntax-highlighting zsh nwg-look lf bleachbit telegram-desktop foot unrar steam wireshark-qt steam noto-fonts-emoji noto-fonts-cjk ttf-liberation inter-font ttf-jetbrains-mono-nerd xorg-xwayland
 
 sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay.git
@@ -22,10 +22,6 @@ chmod +x ~/.config/sway/exit.sh
 chmod +x ~/.config/waybar/powermenu
 chmod +x ~/.config/fetch
 cd
-git clone https://github.com/Peppereli/fonts
-cp -r fonts ~/.local/share/
-
-rm -rf fonts 
 rm -rf dotfilesvoid
 sudo ln -s /etc/runit/sv/NetworkManager /run/runit/service
 
