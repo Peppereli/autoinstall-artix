@@ -1,27 +1,27 @@
 set -e
 
-sudo pacman -S sway swaybg swayidle swaylock waybar pipewire pipewire-pulse wireplumber neovim pavucontrol thunar thunar-archive-plugin 7zip unzip zip xarchiver gcc gthumb btop ffmpegthumbnailer tumbler mpv qbittorrent grim slurp xdg-desktop-portal-wlr zathura zathura-cb zathura-pdf-poppler fzf groff mesa bc yt-dlp zsh-autosuggestions acpi wl-clipboard ttf-nerd-fonts-symbols networkmanager network-manager-applet iwd gammastep gvfs gvfs-mtp dunst polkit-gnome zsh-syntax-highlighting zsh nwg-look lf bleachbit telegram-desktop foot unrar steam wireshark-qt steam noto-fonts-emoji noto-fonts-cjk ttf-liberation inter-font xorg-xwayland ffmpeg rofi-wayland libreoffice-fresh
+sudo pacman -S sway swaybg swayidle swaylock waybar pipewire pipewire-pulse wireplumber neovim pavucontrol thunar thunar-archive-plugin 7zip unzip zip xarchiver gcc gthumb btop ffmpegthumbnailer tumbler mpv qbittorrent grim slurp xdg-desktop-portal-wlr zathura zathura-cb zathura-pdf-poppler fzf groff mesa bc yt-dlp zsh-autosuggestions acpi wl-clipboard ttf-nerd-fonts-symbols networkmanager network-manager-applet iwd gammastep gvfs gvfs-mtp dunst polkit-gnome zsh-syntax-highlighting zsh nwg-look lf bleachbit telegram-desktop foot unrar steam wireshark-qt steam noto-fonts-emoji noto-fonts-cjk ttf-liberation inter-font xorg-xwayland ffmpeg rofi-wayland libreoffice-fresh steam cmus
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-yay -S brillo librewolf-bin musikcube heroic-games-launcher-bin
+yay -S brillo librewolf-bin heroic-games-launcher-bin
 
 cd
 mkdir -p ~/Pictures
 mkdir -p ~/Documents
 mkdir -p ~/movi
 mkdir -p ~/Music
-git clone https://github.com/Peppereli/dotfilesvoid
-cd ~/dotfilesvoid
+git clone https://github.com/Peppereli/dotfilesartix
+cd ~/dotfilesartix
 rm -rf .git
 cp -r "." ~/
 chmod +x ~/.config/sway/exit.sh
 chmod +x ~/.config/waybar/powermenu
 chmod +x ~/.config/fetch
 cd
-rm -rf dotfilesvoid
+rm -rf dotfilesartix
 
 echo "CHANGING THE SHELL TO ZSH..."
 sudo chsh -s $(which zsh) $USER
